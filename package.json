@@ -1,0 +1,19 @@
+{
+  "name": "simple-client-server",
+  "version": "1.0.0",
+  "description": "A simple nodejs client server application with standart base architecture (using Postman)",
+  "main": "./server/index.js",
+  "scripts": {
+    "server": "./node_modules/.bin/nodemon ./server/index.js",
+    "client:local": "NODE_ENV=local node ./client/index.js",
+    "client:postman": "NODE_ENV=postman node ./client/index.js"
+  },
+  "author": "NikolasMelui<slak@samaradom.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.1.0"
+  }
+}
